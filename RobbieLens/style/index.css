@@ -1,0 +1,112 @@
+.accueil_intro{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    align-items: center;
+    margin: auto;
+}
+
+.accueil_photos {
+    background-color: white;
+    padding: 80px;
+}
+
+.accueil_photos h2 {
+    color: #242424;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.accueil_photos div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.block-cta {
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: auto;
+    color: white;
+}
+
+.titre-formulaire {
+    text-align: center;
+    color: #A5B4FC;
+    margin-bottom: 50px;
+}
+
+.form-nom-mail {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.form-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+input, textarea {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+input[type='submit'] {
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 996px){
+    .accueil_intro, form {
+        max-width: 1000px;
+    }
+
+    .accueil_intro {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+    }
+
+    .accueil_intro div {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .accueil_intro img {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .accueil_photos {
+        padding: 20px;
+    }
+
+    .accueil_photos div {
+        flex-direction: column;
+    }
+
+    .formulaire {
+        padding: 50px 20px;
+    }
+
+    .form-nom-mail {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .block-cta {
+        align-items: center;
+    }
+}
