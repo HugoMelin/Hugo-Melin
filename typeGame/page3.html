@@ -1,0 +1,69 @@
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Mon premier site - Test javaScript</title>
+        <link rel="stylesheet" href="styles/style.css"/>
+        <link rel="stylesheet" href="styles/page3.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="scripts/config.js" defer></script>
+        <script src="scripts/fonctions.js" defer></script>
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body>
+        <nav>
+            <a href="index.html">Accueil</a>
+        </nav>
+
+        <main>
+            <section class="presentation">
+                <h1>AzerType</h1>
+                <h2>L'application pour apprendre à écrire</h2>
+                <p>Apprend à écrire grace à AzerType</p>
+            </section>
+
+            <section id="jeux">
+                <p>Choisissez votre mode de jeux</p>
+                <p>et tapez la proposition que s'affiche dans le champ ci-dessous.</p>
+
+                <div id="choixJoueur">
+                    <input type="radio" id="mot" value="mot" name="choix"><label for="mot">Mots</label>
+                    <input type="radio" id="phrase" value="phrase" name="choix"><label for="phrase">Phrases</label>
+                </div>
+
+                <div id="porposition">
+                    Azerty
+                </div>
+
+                <div id="zoneSaisie">
+                    <input type="text" id="motJoueur" name="motJoueur" required>
+                    <input type="submit" value="Envoyer" id="bouttonEnvoyer">
+                </div>
+
+                <div id="score">
+                    Votre score : <span>0</span>
+                </div>
+
+                <div id="zonePartage">
+                    <button>Partager</button>
+                </div>
+
+                <section class="popUpPartage">
+                    <div class="popUp">
+                        <p>Partager votre Score</p>
+                        <form>
+                            <label for="nom">Votre nom</label> <br>
+                            <input type="text" id="nom" name="nom" placeholder="Votre nom"> <br>
+                            <label for="email">Avec qui voulez-vous partager votre score ?</label> <br>
+                            <input type="email" id="email" name="nom" placeholder="nom@domaine.com"> <br>
+                            <button id="btEnvoyer">Envoyer</button>
+                            <button id="fermer">Fermer</button>
+                        </form>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+    </body>

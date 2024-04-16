@@ -1,0 +1,65 @@
+.presentation, .presentation p{
+    text-align: center;
+}
+
+.presentation {
+    margin-bottom: 40px;
+}
+
+.presentation h2 {
+    margin-bottom: 10px;
+}
+
+#jeux {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 60%;
+    align-items: center;
+    margin: auto;
+    text-align: right;
+    padding-top: 10px;
+}
+
+#jeux p {
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+#porposition {
+    text-align: center;
+    width: 75%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid darkslategray;
+    font-size: 1.5em;
+}
+
+.popUpPartage {
+    display: none;
+    position: absolute;
+}
+
+.popUp {
+    position: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(0,5px);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 30px;
+    z-index: 1;
+}
+.popUp p, .popUp input {
+    margin-bottom: 10px;
+}
+
+.active {
+    display: flex;
+}
